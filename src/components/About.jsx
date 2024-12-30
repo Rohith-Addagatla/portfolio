@@ -1,12 +1,167 @@
-import React from 'react';
+import React from "react";
+// Import skill images from assets folder
+import javaImage from "../assets/portfolio/java.png";
+import jsImage from "../assets/portfolio/javascript.png";
+import springBootImage from "../assets/portfolio/springboot.png";
+import reactImage from "../assets/portfolio/react.png";
+import mysqlImage from "../assets/portfolio/mysql.png";
+import kafkaImage from "../assets/portfolio/kafka.png";
+import redisImage from "../assets/portfolio/redis.png";
+import aws from "../assets/portfolio/aws.png";
+
+// Import LeetCode and GeeksforGeeks logos
+import leetcodeLogo from "../assets/portfolio/leetcode.png"; // Add the correct path
+import gfgLogo from "../assets/portfolio/gfg.png"; // Add the correct path
 
 const About = () => (
-  <section id="about" style={{ padding: '50px', textAlign: 'center', background: '#f4f4f9' }}>
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Rohith Addagatla, a passionate software developer with expertise in creating efficient and scalable solutions.
-      I specialize in Java, Springboot and microservices.
-    </p>
+  <section
+    id="about"
+    className="bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white py-24"
+  >
+    <div className="max-w-screen-lg mx-auto px-4 pt-6">
+      {/* About and Profiles Section in a Flex Row */}
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0 md:space-x-12">
+        {/* About Section */}
+        <div className="md:w-2/3 text-center md:text-left">
+          <h2 className="text-4xl sm:text-6xl font-bold">About</h2>
+          <p className="text-gray-400 py-4 max-w-2xl mx-auto md:mx-0">
+            Hi, I’m Rohith Addagatla, a passionate software developer with expertise in creating efficient and scalable solutions.
+            I specialize in Java, Spring Boot, and Microservices. With a focus on backend development, I love solving complex problems and
+            building high-performance systems.
+          </p>
+        </div>
+
+        {/* Profiles Section */}
+        <div className="md:w-1/3 text-center md:text-left">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Profiles</h3>
+          <div className="flex justify-start gap-12">
+            <a
+              href="https://leetcode.com/u/rohith25/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={leetcodeLogo}
+                alt="LeetCode"
+                className="w-24 h-24 object-contain"
+              />
+            </a>
+            <a
+              href="https://www.geeksforgeeks.org/user/rohithstar6/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={gfgLogo}
+                alt="GeeksforGeeks"
+                className="w-24 h-24 object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Primary Skills Section */}
+      <div className="mt-12">
+        <h4 className="text-2xl sm:text-3xl font-bold text-left text-white mb-8">
+          Primary Skills
+        </h4>
+
+        {/* Skill Images Section */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 gap-y-12 justify-items-center">
+          {/* Skill 1 - Java */}
+          <div className="flex justify-center items-center">
+            <img
+              src={javaImage}
+              alt="Java"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          {/* Skill 2 - JavaScript */}
+          <div className="flex justify-center items-center">
+            <img
+              src={jsImage}
+              alt="JavaScript"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          {/* Skill 3 - Spring Boot */}
+          <div className="flex justify-center items-center">
+            <img
+              src={springBootImage}
+              alt="Spring Boot"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          {/* Skill 4 - React */}
+          <div className="flex justify-center items-center">
+            <img
+              src={reactImage}
+              alt="React"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+
+          {/* Skill 5 - MySQL */}
+          <div className="flex justify-center items-center">
+            <img
+              src={mysqlImage}
+              alt="MySQL"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          {/* Skill 6 - Kafka */}
+          <div className="flex justify-center items-center">
+            <img
+              src={kafkaImage}
+              alt="Kafka"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          {/* Skill 7 - Redis */}
+          <div className="flex justify-center items-center">
+            <img
+              src={redisImage}
+              alt="Redis"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+          {/* Skill 8 - AWS */}
+          <div className="flex justify-center items-center">
+            <img
+              src={aws}
+              alt="AWS"
+              className="w-24 h-24 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Experience Section */}
+      <div className="mt-12">
+        <h4 className="text-2xl sm:text-3xl font-bold text-left text-white mb-8">
+          Experience
+        </h4>
+
+        {/* Experience Details */}
+        <div className="space-y-4 text-left">
+          {/* Experience 1 - National Payments Corporation of India */}
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center lg:space-x-8 space-y-4 lg:space-y-0">
+            <div className="flex flex-col w-full lg:w-1/3">
+              <h5 className="text-xl font-semibold text-white">National Payments Corporation of India <span>(Hyderabad)</span></h5> 
+              <p className="text-gray-400">Associate Software Developer</p>
+              <p className="text-gray-400">Aug 08, 2022 - Present</p>
+            </div>
+            <div className="flex flex-col w-full lg:w-2/3">
+              <p className="text-gray-400">
+                Currently working as an Associate Software Developer, where I focus on building and maintaining efficient and scalable payment solutions.
+                I am primarily involved in backend development with Java, Spring Boot, and microservices, optimizing systems, and handling high-volume transactions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 );
 
