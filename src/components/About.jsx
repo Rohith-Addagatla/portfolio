@@ -25,9 +25,7 @@ const About = () => (
         <div className="md:w-2/3 text-center md:text-left">
           <h2 className="text-4xl sm:text-6xl font-bold">About</h2>
           <p className="text-gray-400 py-4 max-w-2xl mx-auto md:mx-0">
-            Hi, I’m Rohith Addagatla, a passionate software developer with expertise in creating efficient and scalable solutions.
-            I specialize in Java, Spring Boot, and Microservices. With a focus on backend development, I love solving complex problems and
-            building high-performance systems.
+          Hi, I’m Rohith Addagatla, a passionate software developer with expertise in designing and developing scalable, high-performance applications. My passion for technology extends beyond work—I actively participate in coding challenges, having solved 300+ LeetCode problems and earned a 5-star badge in Java & Python on HackerRank. I continuously upskill, explore emerging technologies, and contribute to impactful projects. I believe in writing clean, efficient code and developing solutions that drive real-world innovation
           </p>
         </div>
 
@@ -154,8 +152,7 @@ const About = () => (
             </div>
             <div className="flex flex-col w-full lg:w-2/3">
               <p className="text-gray-400">
-                Currently working as an Associate Software Developer, where I focus on building and maintaining efficient and scalable payment solutions.
-                I am primarily involved in backend development with Java, Spring Boot, and microservices, optimizing systems, and handling high-volume transactions.
+              As a Full Stack Developer at the National Payments Corporation of India, I contributed to high-performance product development and application portal creation. I developed scalable APIs, enhanced transaction search features, and resolved production issues to optimize the ONMAGS product, increasing its success rate significantly. Additionally, I played a critical role in creating onboarding portals, integrating thousands of merchants and banks, and improving application security. My efforts also included enhancing simulation environments for automated testing, supporting production systems, and configuring messaging queues to ensure consistency and operational reliability.
               </p>
             </div>
           </div>

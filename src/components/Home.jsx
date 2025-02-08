@@ -14,9 +14,7 @@ const Home = () => {
             Full Stack Developer
           </h2>
           <p className="text-gray-400 py-4 max-w-md">
-            I have 2+ years of experience building and designing software.
-            Currently, I love to work on backend applications using
-            technologies like Java, Spring Boot, Microservices, and React.
+          I have 2+ years of experience in building and designing software. Currently, I love working on applications using technologies like Java, Spring Boot, Microservices, and React. I enjoy solving complex problems, optimizing performance, and creating scalable solutions that enhance user experiences. Continuously learning and exploring new technologies, I strive to develop efficient and impactful software.
           </p>
 
           {/* Resume Button */}
